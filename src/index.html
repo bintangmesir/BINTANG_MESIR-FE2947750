@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <title>Portofolio Online - Bintang Mesir</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins&display=swap");
+    </style>
+    <script>
+      module.exports = {
+        theme: {
+          extend: {
+            fontFamily: {
+              montserrat: ["Montserrat", "sans-serif"],
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    id="body"
+    class="grid grid-rows-1 grid-cols-1 bg-neutral-900 text-white"
+  >
+    <!-- section header -->
+    <header id="header" class="sticky top-0 z-50 bg-neutral-900">
+      <nav>
+        <div class="container border-b-2 mx-auto p-3.5">
+          <div class="flex flex-row justify-between">
+            <div class="flex flex-row justify-center items-center">
+              <img
+                src="assets/img/navbar/navbar-logo.png"
+                alt="logo-cv"
+                width="32"
+                height="32"
+              />
+              <a class="pl-3 text-xl text-monserrat font-bold" href="#hero"
+                ><span class="text-red-500">My</span> Portofolio</a
+              >
+            </div>
+            <div class="sm:block hidden">
+              <ul class="flex flex-row justify-center items-center gap-x-4">
+                <li class="navbar-item">
+                  <a class="nav-link hover:text-red-500" href="#hero">Home</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="nav-link hover:text-red-500" href="#about">About</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="nav-link hover:text-red-500" href="#skill">Skill</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="nav-link hover:text-red-500" href="#education"
+                    >Education</a
+                  >
+                </li>
+                <li class="navbar-item">
+                  <a class="nav-link hover:text-red-500" href="#portofolio"
+                    >Portofolio</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="navbar-button sm:block hidden">
+              <a
+                href="#contact"
+                class="text-poppins bg-red-500 hover:bg-red-600 py-2 px-4 text-sm text-center rounded"
+                >Contact</a
+              >
+            </div>
+            <div class="w-6 h-6 block sm:hidden">
+              <img
+                src="assets/img/navbar/navbar-humberger.png"
+                alt="navbar-toggler"
+              />
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- end section header -->
+    <!-- section main -->
+    <main id="main" class="grid grid-rows-1 grid-cols-1 gap-10 sm:gap-20">
+      <!-- section hero -->
+      <section id="hero" class="mx-auto">
+        <div class="container mx-auto">
+          <div class="grid sm:grid-cols-2 grid-cols-1 min-h-screen">
+            <div
+              class="flex flex-col justify-center mx-auto order-2 gap-12 p-4"
+            >
+              <div
+                class="text-4xl sm:text-5xl font-bold leading-tight tracking-wide font-montserrat"
+              >
+                <h1>
+                  Hello <br />
+                  I'am <span class="text-red-500">Bintang</span><br />
+                  Web Developer
+                </h1>
+              </div>
+              <div class="font-poppins">
+                <a
+                  href="#contact"
+                  class="bg-red-500 hover:bg-red-600 py-3 px-6 rounded"
+                  >My portofolio</a
+                >
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center order-1 sm:order-3 mx-auto p-4"
+            >
+              <img
+                src="assets/img/hero/IMG_20220926_123824-transformed.png"
+                alt="my Profile"
+                class="w-80 md:w-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end section hero -->
+      <!-- section about -->
+      <section id="about" class="mx-auto">
+        <div class="container mx-auto">
+          <div class="grid sm:grid-cols-2 grid-cols-1 gap-4">
+            <div class="flex flex-col justify-center mx-auto p-4">
+              <img
+                src="assets/img/hero/IMG_20220926_123824-transformed.png"
+                alt="my Profile"
+                class="w-80"
+              />
+            </div>
+            <div class="flex flex-col justify-center mx-auto gap-4 p-8">
+              <h1 class="font-montserrat text-3xl font-bold text-red-500">
+                About Me
+              </h1>
+              <p class="font-poppins">
+                I am a FrontEnd web developer and UI/UX designer with some
+                skills in several frameworks and libraries for FrontEnd web
+                developers and I have expertise in interface design for
+                websites. I am studying Web Development, especially in Frontend
+                Development and currently studying the React JS Framework
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end section about -->
+      <!-- section skill -->
+      <section id="skill" class="mx-auto">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-1 gap-4">
+            <div class="flex flex-col justify-center sm:mx-auto gap-2 p-8">
+              <h1
+                class="font-montserrat text-3xl text-center font-bold text-red-500"
+              >
+                My Skills
+              </h1>
+              <p class="font-poppins text-center">My Skills for My Arts 😎</p>
+            </div>
+            <div class="flex flex-row flex-wrap justify-around gap-y-8 p-4">
+              <div class="w-9/12 md:w-1/5 h-auto">
+                <img src="assets/img/skill/download.png" alt="html" />
+              </div>
+              <div class="w-9/12 md:w-1/5 h-auto">
+                <img src="assets/img/skill/download1.png" alt="css" />
+              </div>
+              <div class="w-9/12 sm:w-1/5 h-auto">
+                <img src="assets/img/skill/download2.png" alt="javaScript" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end section skill -->
+      <!-- section education -->
+      <section id="education" class="mx-auto">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-1">
+            <div class="flex flex-col justify-center p-4">
+              <h1
+                class="font-montserrat text-3xl text-center font-bold text-red-500"
+              >
+                My Education
+              </h1>
+            </div>
+            <div class="flex flex-row flex-wrap justify-around p-4">
+              <p class="font-poppins text-center">
+                I'm doing a bachelor's degree in informatics engineering at
+                University Muhammadiyah Jakarta and I'm doing a bootcamp program
+                on FrontEnd Engineering and Web Developer at Ruangguru and
+                Prograte.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end section education -->
+      <!-- section portofolio -->
+      <section id="portofolio" class="mx-auto">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-1 gap-4">
+            <div class="flex flex-col justify-center sm:mx-auto gap-2 p-8">
+              <h1
+                class="font-montserrat text-3xl text-center font-bold text-red-500"
+              >
+                My Portofolio
+              </h1>
+            </div>
+            <div class="flex flex-row flex-wrap justify-around gap-8 p-4">
+              <div class="w-10/12 sm:w-1/5 h-auto">
+                <img
+                  src="assets/img/portofolio/[Sertifikat Bootcamp] Khursus Git-1.png"
+                  alt="html"
+                />
+              </div>
+              <div class="w-10/12 sm:w-1/5 h-auto">
+                <img
+                  src="assets/img/portofolio/[Sertifikat Bootcamp] Khursus HTML & CSS-1.png"
+                  alt="css"
+                />
+              </div>
+              <div class="w-10/12 sm:w-1/5 h-auto">
+                <img
+                  src="assets/img/portofolio/[Sertifikat Bootcamp] Khursus Java Script-1.png"
+                  alt="javaScript"
+                />
+              </div>
+              <div class="w-10/12 sm:w-1/5 h-auto">
+                <img src="assets/img/portofolio/CERT-A0WKQBM0.jpg" alt="css" />
+              </div>
+              <div class="w-10/12 sm:w-1/5 h-auto">
+                <img
+                  src="assets/img/portofolio/CERT-OBEXA493.jpg"
+                  alt="javaScript"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end section portofolio -->
+      <!-- section contact -->
+      <section id="contact" class="mx-auto">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="flex flex-col justify-center mx-auto gap-4 p-4">
+              <h1 class="font-montserrat text-3xl font-bold text-red-500">
+                My Contact
+              </h1>
+              <p class="font-poppins">
+                You can follow me from my social media or <br />discussing for
+                our project 👍
+              </p>
+              <a
+                class="bg-red-500 hover:bg-red-600 py-3 px-6 text-center rounded"
+                href="https://github.com/bintangmesir"
+                >My Github</a
+              >
+              <a
+                class="bg-red-500 hover:bg-red-600 py-3 px-6 text-center rounded"
+                href="https://www.linkedin.com/in/bintang-mesir-71a469191/"
+                >My Linkedin</a
+              >
+            </div>
+            <div class="flex flex-col justify-center items-center mx-auto p-4">
+              <form
+                action="submit"
+                id="submit"
+                class="flex flex-col justify-center gap-5"
+              >
+                <div class="contact-form-email">
+                  <label for="inputEmail" class="contact-form-label"
+                    ><p class="font-poppins">Email</p>
+                  </label>
+                  <input
+                    type="email"
+                    name="form-email"
+                    id="inputEmail"
+                    placeholder="Your Email"
+                    class="w-full rounded"
+                  />
+                </div>
+                <div class="contact-form-name">
+                  <label for="inputName" class="contact-form-label"
+                    ><p class="font-poppins">Name</p>
+                  </label>
+                  <input
+                    type="text"
+                    name="form-name"
+                    id="inputName"
+                    placeholder="Your Name"
+                    class="w-full rounded"
+                  />
+                </div>
+                <div class="contact-form-message">
+                  <label for="inputMessage"
+                    ><p class="font-poppins">Message</p>
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    cols="50"
+                    class="w-full rounded text-gray-700"
+                  >
+type here.</textarea
+                  >
+                </div>
+                <div class="contact-button">
+                  <button
+                    type="submit"
+                    class="bg-red-500 hover:bg-red-600 py-3 px-6 text-center rounded"
+                  >
+                    Send
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end section contact -->
+    </main>
+    <!-- end section main -->
+    <!-- section footer -->
+    <footer id="footer">
+      <div class="container mx-auto bg-red-500">
+        <div class="text-center font-semibold p-5">
+          <a href="#hero" class="text-md"> Bintang Mesir - FE2947750. </a>
+          &copy; 2022. All Right Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- end section footer -->
+  </body>
+</html>
